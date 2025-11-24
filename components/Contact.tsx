@@ -206,7 +206,7 @@ export const Contact: React.FC = () => {
         </div>
 
         {/* Map Section */}
-        <Reveal delay={600} width="100%">
+        <Reveal delay={50} width="100%">
             <div className="rounded-3xl overflow-hidden shadow-lg h-80 border border-gray-100 relative group">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5235.779441133327!2d72.95314211193647!3d20.360685910308124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0cfd3a7cfb925%3A0x8aa59ff8cc39fff6!2sSaloni%20Paper%20Machines%20Pvt%20Ltd!5e1!3m2!1sen!2sin!4v1763977033499!5m2!1sen!2sin"

@@ -32,7 +32,7 @@ export const Footer: React.FC = () => {
               <li><a href="#about" className="hover:text-brand-400 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>About Us</a></li>
               <li><a href="#products" className="hover:text-brand-400 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>Machine Catalogue</a></li>
               <li><a href="#services" className="hover:text-brand-400 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>Services</a></li>
-              <li><a href="#projects" className="hover:text-brand-400 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>Projects</a></li>
+              <li><a href="#products" className="hover:text-brand-400 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>Products</a></li>
               <li><a href="#contact" className="hover:text-brand-400 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>Contact Us</a></li>
             </ul>
           </div>

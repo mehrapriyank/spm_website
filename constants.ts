@@ -116,177 +116,151 @@ export const MACHINE_HIERARCHY = [
 export const PRODUCTS: Product[] = [
   {
     id: "headbox",
-    title: "Head Box Systems",
+    title: "Head Box Systems - Precision Paper Machine Components",
     description:
-      "The headbox plays a critical role in determining basis weight profile, sheet formation, and fiber orientation. Our designs ensure uniform stock distribution and stable flow for consistent paper quality.",
+      "The headbox plays a critical role in determining basis weight profile, sheet formation, and fiber orientation. Our designs ensure uniform stock distribution and stable flow for consistent paper quality across all grades.",
     image: "images/head_box.jpg",
-    features: ["Uniform Sheet Formation", "Stable Flow Distribution", "Improved Fiber Orientation"]
+    features: ["Uniform Sheet Formation", "Stable Flow Distribution", "Improved Fiber Orientation", "High-precision engineering"]
   },
   {
     id: "wire-section",
-    title: "Fourdrinier / Wire Section",
+    title: "Fourdrinier / Wire Section - Heavy-Duty Paper Machine Equipment",
     description:
-      "We manufacture heavy-duty cantilever-type wire sections that enable quick and easy wire changes. The structural frames are fabricated in MS and clad with 2mm SS 304 for strength, durability, and corrosion resistance.",
+      "We manufacture heavy-duty cantilever-type wire sections that enable quick and easy wire changes. The structural frames are fabricated in MS and clad with 2mm SS 304 for strength, durability, and corrosion resistance in demanding paper manufacturing environments.",
     image: "images/wire_section.jpg",
-    features: ["Cantilever System", "SS 304 Cladding", "Fast Wire Change"]
+    features: ["Cantilever System", "SS 304 Cladding", "Fast Wire Change", "Proven reliability"]
   },
   {
     id: "press-section",
-    title: "Straight Press Section (Conventional)",
+    title: "Straight Press Section (Conventional) - Efficient Dewatering",
     description:
-      "The press section mechanically removes water from the wet web delivered from the wire section. Higher dryness after pressing significantly reduces steam consumption in the dryer, making efficient pressing a key cost advantage.",
+      "The press section mechanically removes water from the wet web delivered from the wire section. Higher dryness after pressing significantly reduces steam consumption in the dryer, making efficient pressing a key cost advantage for paper manufacturers.",
     image: "images/straight_press.jpg",
-    features: ["High Dryness Output", "Lower Steam Consumption", "Robust Dewatering"]
+    features: ["High Dryness Output", "Lower Steam Consumption", "Robust Dewatering", "Cost-effective operation"]
   },
   {
     id: "k-press",
-    title: "K-Press",
+    title: "K-Press - Kraft Paper Machine Specialization",
     description:
-      "Specially engineered for lighter GSM kraft paper, the K-Press features a compact two-nip design with a central suction press roll serving both nips. It delivers higher exit dryness, improved bulk, and reduced space requirements.",
+      "Specially engineered for lighter GSM kraft paper, the K-Press features a compact two-nip design with a central suction press roll serving both nips. It delivers higher exit dryness, improved bulk, and reduced space requirements for kraft paper production.",
     image: "images/K_press.jpg",
-    features: ["Two-Nip Compact Design", "High Exit Dryness", "Ideal for Kraft Paper"]
+    features: ["Two-Nip Compact Design", "High Exit Dryness", "Ideal for Kraft Paper", "Space-efficient"]
   },
   {
     id: "bi-nip-press",
-    title: "Bi-Nip Press",
+    title: "Bi-Nip Press - High-Speed Paper Machine Solution",
     description:
-      "Designed for writing, printing, and newsprint grades above 400 MPM speeds, the Bi-Nip Press uses a pickup-cum-press roll configuration serving two suction nips. It offers better runnability, higher dryness, and improved sheet quality.",
+      "Designed for writing, printing, and newsprint grades above 400 MPM speeds, the Bi-Nip Press uses a pickup-cum-press roll configuration serving two suction nips. It offers better runnability, higher dryness, and improved sheet quality for high-speed production.",
     image: "images/Bi_nip_press.jpg",
-    features: ["High-Speed Operation", "Two Suction Nips", "Improved Runnability"]
+    features: ["High-Speed Operation", "Two Suction Nips", "Improved Runnability", "Superior sheet quality"]
   },
   {
     id: "suction-roll",
-    title: "Suction Press Rolls",
+    title: "Suction Press Rolls - Versatile Paper Machine Components",
     description:
-      "Engineered for both suction couch and suction press applications, our suction rolls feature single or double zone internal box options. They deliver smooth operation, reliable dewatering, and proven performance across diverse machine setups.",
+      "Engineered for both suction couch and suction press applications, our suction rolls feature single or double zone internal box options. They deliver smooth operation, reliable dewatering, and proven performance across diverse machine setups and paper grades.",
     image: "images/Suction_press_rolls.jpg",
-    features: ["Single/Double Zone", "Smooth Dewatering", "Versatile Applications"]
+    features: ["Single/Double Zone", "Smooth Dewatering", "Versatile Applications", "Reliable performance"]
   },
   {
     id: "size-press",
-    title: "Size Press Section",
+    title: "Size Press Section - Surface Sizing Paper Machines",
     description:
-      "Used for surface sizing to apply starch or sizing agents, this section enhances sheet strength and surface properties. Our systems ensure uniform size pick-up and come with complete size preparation support.",
+      "Used for surface sizing to apply starch or sizing agents, this section enhances sheet strength and surface properties. Our systems ensure uniform size pick-up and come with complete size preparation support for various paper grades.",
     image: "images/Size_press.jpg",
-    features: ["Surface Sizing", "Strength Enhancement", "Uniform Application"]
+    features: ["Surface Sizing", "Strength Enhancement", "Uniform Application", "Complete support"]
   },
   {
     id: "dryer-section",
-    title: "Dryer Section",
+    title: "Dryer Section - Efficient Moisture Removal for Paper Production",
     description:
-      "After leaving the press section at 40–50% dryness, the sheet enters the dryer where moisture is removed by evaporation. Our alloy cast iron cylinders ensure efficient drying for paper, board, specialty grades, and tissue.",
+      "After leaving the press section at 40–50% dryness, the sheet enters the dryer where moisture is removed by evaporation. Our alloy cast iron cylinders ensure efficient drying for paper, board, specialty grades, and tissue paper applications.",
     image: "images/Dryer_section.jpg",
-    features: ["Alloy Cast Cylinders", "Efficient Evaporation", "Wide Grade Compatibility"]
+    features: ["Alloy Cast Cylinders", "Efficient Evaporation", "Wide Grade Compatibility", "Energy-efficient"]
   },
   {
     id: "pope-reel",
-    title: "Pope Reel Section",
+    title: "Pope Reel Section - Master Reel Winding System",
     description:
-      "At the end of the machine, the paper web is wound into a master reel. Our systems ensure smooth reel building, stable tension, and reliable winding performance for consistent roll quality.",
+      "At the end of the machine, the paper web is wound into a master reel. Our systems ensure smooth reel building, stable tension, and reliable winding performance for consistent roll quality in all paper manufacturing applications.",
     image: "images/pope_reel.jpg",
-    features: ["Stable Winding", "Smooth Roll Formation", "Consistent Tension"]
+    features: ["Stable Winding", "Smooth Roll Formation", "Consistent Tension", "Quality assurance"]
   },
   {
     id: "rewinder",
-    title: "Rewinder Section",
+    title: "Rewinder Section - Precision Paper Slitting Equipment",
     description:
-      "The master reel from the pope reel is rewound and slit into required sizes. Our twin drum winders deliver excellent slitting quality, large finished reels, high output, low downtime, and automated set changes.",
+      "The master reel from the pope reel is rewound and slit into required sizes. Our twin drum winders deliver excellent slitting quality, large finished reels, high output, low downtime, and automated set changes for paper finishing operations.",
     image: "images/Rewinder_section.jpg",
-    features: ["Twin Drum Design", "High Slitting Quality", "High Productivity"]
+    features: ["Twin Drum Design", "High Slitting Quality", "High Productivity", "Automated efficiency"]
   }
 ];
 
-export const PROJECTS: Project[] = [
-  {
-    id: "p1",
-    title: "200 TPD Kraft Paper Plant",
-    category: "Turnkey Project",
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=600"
-  },
-  {
-    id: "p2",
-    title: "High Speed Tissue Machine",
-    category: "Manufacturing",
-    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=600"
-  },
-  {
-    id: "p3",
-    title: "Board Machine Modernization",
-    category: "Rebuild",
-    image: "https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&q=80&w=600"
-  },
-  {
-    id: "p4",
-    title: "Pulp Mill Expansion",
-    category: "Consultancy",
-    image: "https://images.unsplash.com/photo-1565459303368-733a9b3d0707?auto=format&fit=crop&q=80&w=600"
-  }
-];
 
 export const SERVICES: Service[] = [
   {
     id: "manufacturing",
-    title: "Paper Machine Manufacturing",
+    title: "Paper Machine Manufacturing - Custom Solutions",
     description:
-      "We deliver high-quality paper machines designed for a wide range of applications with varying TPD, basis weight, speed, and deckle (width). Equipped with the latest technology, our machines are engineered to meet specific customer requirements and ensure long-term performance.",
+      "We deliver high-quality paper machines designed for a wide range of applications with varying TPD, basis weight, speed, and deckle (width). Equipped with the latest technology, our machines are engineered to meet specific customer requirements and ensure long-term performance in global markets.",
     icon: Factory,
-    features: ["Customized Designs", "Advanced Technology", "High-Performance Output"]
+    features: ["Customized Designs", "Advanced Technology", "High-Performance Output", "Global standards compliance"]
   },
   {
     id: "installation",
-    title: "Installation & Commissioning",
+    title: "Installation & Commissioning - Expert On-Site Services",
     description:
-      "Our responsibility goes beyond supplying machines—we bring them to life. Our skilled on-site teams ensure smooth installation and commissioning, even for machines from other manufacturers, guaranteeing a seamless start to production.",
+      "Our responsibility goes beyond supplying machines—we bring them to life. Our skilled on-site teams ensure smooth installation and commissioning, even for machines from other manufacturers, guaranteeing a seamless start to production with minimal downtime.",
     icon: Wrench,
-    features: ["On-Site Expertise", "Multi-Brand Commissioning", "Smooth Startup"]
+    features: ["On-Site Expertise", "Multi-Brand Commissioning", "Smooth Startup", "24/7 support during commissioning"]
   },
   {
     id: "erection",
-    title: "Plant Erection",
+    title: "Plant Erection - Efficient Project Execution",
     description:
-      "With a focus on minimizing downtime, our dedicated erection team provides efficient execution, supported by round-the-clock remote and on-site assistance. We handle emergency maintenance, preventive shutdowns, and unexpected breakdowns to keep operations running.",
+      "With a focus on minimizing downtime, our dedicated erection team provides efficient execution, supported by round-the-clock remote and on-site assistance. We handle emergency maintenance, preventive shutdowns, and unexpected breakdowns to keep operations running smoothly.",
     icon: Settings,
-    features: ["Rapid Execution", "24/7 Support", "Downtime Reduction"]
+    features: ["Rapid Execution", "24/7 Support", "Downtime Reduction", "Emergency response"]
   },
   {
     id: "upgradation",
-    title: "Machine Up-gradation",
+    title: "Machine Up-gradation - Performance Enhancement",
     description:
-      "Continuous improvement drives success. We upgrade existing machines with the latest available technology to increase capacity, improve quality, and enhance overall machine performance.",
+      "Continuous improvement drives success. We upgrade existing machines with the latest available technology to increase capacity, improve quality, and enhance overall machine performance without complete replacement.",
     icon: TrendingUp,
-    features: ["Technology Integration", "Performance Boost", "Quality Enhancement"]
+    features: ["Technology Integration", "Performance Boost", "Quality Enhancement", "Cost-effective upgrade"]
   },
   {
     id: "operations",
-    title: "Operational Improvement & Expansion",
+    title: "Operational Improvement & Expansion - Efficiency Solutions",
     description:
       "Operational efficiency is key to profitability in process plants. We deliver engineered solutions that streamline operations, eliminate bottlenecks, and maximize equipment efficiency for sustained growth and smooth production.",
     icon: Users,
-    features: ["Process Optimization", "Capacity Expansion", "Efficiency Engineering"]
+    features: ["Process Optimization", "Capacity Expansion", "Efficiency Engineering", "Profitability improvement"]
   },
   {
     id: "energy",
-    title: "Energy Conservation",
+    title: "Energy Conservation - Sustainable Solutions",
     description:
       "As one of the industry's largest energy-consuming sectors, the paper industry requires smart conservation practices. Our experts provide end-to-end solutions to reduce steam and power consumption, lower operating costs, and support environmental sustainability.",
     icon: Zap,
-    features: ["Steam Optimization", "Power Savings", "Sustainability Solutions"]
+    features: ["Steam Optimization", "Power Savings", "Sustainability Solutions", "Green manufacturing"]
   },
   {
     id: "rejuvenation",
-    title: "Old Machinery Rejuvenation",
+    title: "Old Machinery Rejuvenation - Life Extension Services",
     description:
-      "We reinvent aging machines by repairing, replacing, and adding advanced features to restore performance and extend service life. Our approach transforms old equipment into reliable, efficient assets.",
+      "We reinvent aging machines by repairing, replacing, and adding advanced features to restore performance and extend service life. Our approach transforms old equipment into reliable, efficient assets for years to come.",
     icon: Cog,
-    features: ["Life Extension", "Component Upgrades", "Performance Restoration"]
+    features: ["Life Extension", "Component Upgrades", "Performance Restoration", "Cost-effective solution"]
   },
   {
     id: "modernization",
-    title: "Modernization",
+    title: "Modernization - Advanced System Integration",
     description:
-      "Beyond rejuvenation, we provide modification and modernization solutions tailored to existing designs and operations—including machines manufactured by companies other than Saloni PMPL.",
+      "Beyond rejuvenation, we provide modification and modernization solutions tailored to existing designs and operations—including machines manufactured by companies other than Saloni PMPL. We bridge technology gaps and future-proof your equipment.",
     icon: ShieldCheck,
-    features: ["Cross-Brand Modernization", "Design Enhancements", "Future-Ready Systems"]
+    features: ["Cross-Brand Modernization", "Design Enhancements", "Future-Ready Systems", "Expert consultation"]
   }
 ];
 
