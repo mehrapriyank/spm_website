@@ -13,29 +13,23 @@ export const Customers: React.FC<CustomersProps> = ({ mode = 'carousel' }) => {
 
   if (mode === 'grid') {
     return (
-      <section id="customers-grid" className="py-24 bg-white min-h-screen">
+      <section id="customers-list" className="py-24 bg-white min-h-screen">
         <div className="container mx-auto px-6 pt-20">
           <Reveal direction="up">
             <SectionTitle title="Our Customers" subtitle="Trusted Partners" />
           </Reveal>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 mt-12">
             {CUSTOMERS.map((customer) => (
-              <Reveal key={customer.id} delay={100} width="100%">
-                <div className="bg-gray-50 rounded-xl p-8 flex items-center justify-center aspect-video hover:shadow-lg transition-shadow border border-gray-100">
-                  <img 
-                    src={customer.logo} 
-                    alt={customer.name} 
-                    className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                  />
-                </div>
-              </Reveal>
+              <li key={customer.id} className="bg-gray-50 rounded-xl p-6 flex flex-col items-center justify-center shadow-sm hover:shadow-lg transition-shadow border border-gray-100">
+                <span className="font-heading text-lg font-semibold text-gray-900 text-center mb-1">{customer.name}</span>
+                <span className="text-sm text-gray-500 text-center">{customer.place}</span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
     );
   }
-
   return (
     <section id="customers" className="py-20 bg-white border-t border-gray-100 overflow-hidden">
       <div className="container mx-auto px-6 mb-12 text-center">
@@ -48,10 +42,10 @@ export const Customers: React.FC<CustomersProps> = ({ mode = 'carousel' }) => {
 
       <div className="relative w-full overflow-hidden">
         <div className="flex w-max animate-scroll">
-          {duplicatedCustomers.map((customer, index) => (
+          {duplicatedCustomers.filter(customer => customer.logo).map((customer, index) => (
             <div 
               key={`${customer.id}-${index}`} 
-              className="mx-8 w-48 h-24 flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+              className="mx-8 w-48 h-24 flex items-center justify-center opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
             >
               <img 
                 src={customer.logo} 
