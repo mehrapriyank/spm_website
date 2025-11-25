@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './styles/components.css';
+import './index.css';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Stats } from './components/Stats';
@@ -50,6 +50,7 @@ function App() {
   };
 
   return (
+    
     <div className="font-sans text-gray-900 bg-white selection:bg-brand-200 selection:text-brand-900">
       <Navbar onNavigate={handleNavigate} currentView={currentView} />
       

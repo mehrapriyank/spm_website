@@ -1,3 +1,6 @@
+@config "./tailwind.config.js";
+@import "tailwindcss";
+
 :root{
   --reveal-duration: 200ms;
   --reveal-delay: 0ms;
@@ -33,3 +36,47 @@
 .no-iframe-border{ border: 0; }
 
 .hero-bg-img{ animation-duration: 30s !important; }
+
+
+/* Custom scrollbar for a premium feel */
+::-webkit-scrollbar {
+width: 8px;
+}
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+background: #0c4a6e;
+border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+background: #075985;
+}
+html {
+scroll-behavior: smooth;
+}
+
+@keyframes fadeInUp {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+.animate-fade-in-up {
+animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animation-delay-100 {
+animation-delay: 0.1s;
+}
+.animation-delay-200 {
+animation-delay: 0.2s;
+}
+.animation-delay-300 {
+animation-delay: 0.3s;
+}
