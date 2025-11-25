@@ -14,21 +14,19 @@ export const Gallery: React.FC = () => {
           />
         </Reveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {GALLERY_ITEMS.map((item, index) => (
-            <Reveal key={item.id} delay={index * 100} width="100%">
-              <div className="group relative overflow-hidden rounded-xl aspect-square shadow-md cursor-pointer">
-                <img 
-                  src={item.src} 
-                  alt={item.alt} 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            <Reveal key={item.id} delay={index * 2} width="100%">
+              <div className="group relative overflow-hidden rounded-xl shadow-md cursor-pointer bg-white flex items-center justify-center" style={{ aspectRatio: '1 / 1', minHeight: '220px' }}>
+                <img
+                  src={item.src}
+                  alt={item.alt}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-colors duration-300 flex items-center justify-center">
                   <div className="opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 text-center">
-                    <span className="inline-block px-3 py-1 bg-brand-600 text-white text-xs font-bold uppercase tracking-wider rounded-full mb-2">
-                      {item.category}
-                    </span>
-                    <h3 className="text-white font-heading font-bold text-xl">{item.alt}</h3>
+                    <h3 className="text-white font-heading font-bold text-base md:text-lg px-2">{item.alt}</h3>
                   </div>
                 </div>
               </div>
