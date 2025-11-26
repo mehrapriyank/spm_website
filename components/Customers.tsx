@@ -45,7 +45,7 @@ export const Customers: React.FC<CustomersProps> = ({ mode = 'carousel' }) => {
           {duplicatedCustomers.filter(customer => customer.logo).map((customer, index) => (
             <div 
               key={`${customer.id}-${index}`} 
-              className="mx-8 w-48 h-24 flex items-center justify-center opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+              className="mx-8 w-48 h-24 flex items-center justify-center transition-all duration-300"
             >
               <img 
                 src={customer.logo} 
