@@ -53,7 +53,7 @@ export const Machines: React.FC = () => {
   };
 
   return (
-    <section id="machines-page" className="py-24 bg-white relative overflow-hidden min-h-screen">
+    <section id="machines-page" className="py-24 bg-white relative overflow-hidden">
        <div className="absolute top-0 left-0 w-full h-96 bg-brand-50 skew-y-3 transform -translate-y-48 z-0" />
       
       <div className="container mx-auto px-6 relative z-10 pt-12">
