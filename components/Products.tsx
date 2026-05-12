@@ -28,7 +28,7 @@ export const Products: React.FC = () => {
   const progress = ((startIndex + 1) / (maxIndex + 1)) * 100;
 
   return (
-    <section id="products" className="py-24 bg-white relative overflow-hidden min-h-screen flex flex-col justify-center">
+    <section id="products" className="py-24 bg-white relative overflow-hidden flex flex-col justify-center">
        {/* Background Element */}
        <div className="absolute top-0 right-0 w-2/3 h-full bg-gray-50/50 skew-x-12 transform translate-x-1/3 z-0" />
       
