@@ -1,8 +1,31 @@
 import React from 'react';
 import { APP_NAME, CONTACT_INFO } from '../constants';
-import { Facebook, Twitter, Linkedin, Instagram, MapPin, Phone, Mail } from 'lucide-react';
+import { Facebook, Linkedin, MapPin, Phone, Mail } from 'lucide-react';
 
-export const Footer: React.FC = () => {
+interface FooterProps {
+  onNavigate: (view: string) => void;
+}
+
+const footerLinks = [
+  { label: 'Home', view: 'home' },
+  { label: 'About Us', view: 'about' },
+  { label: 'Services', view: 'services' },
+  { label: 'Products', view: 'products' },
+  { label: 'Customers', view: 'customers' },
+  { label: 'Contact Us', view: 'contact' },
+];
+
+const secondaryLinks = [
+  { label: 'Gallery', view: 'gallery' },
+  { label: 'Download Brochure', view: 'brochure' },
+];
+
+export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
+  const handleNavClick = (event: React.MouseEvent<HTMLAnchorElement>, view: string) => {
+    event.preventDefault();
+    onNavigate(view);
+  };
+
   return (
     <footer className="bg-brand-950 text-white border-t border-brand-900">
       <div className="container mx-auto px-6 py-16">
@@ -16,10 +39,10 @@ export const Footer: React.FC = () => {
               A premier manufacturer of Paper Machinery and Pulp Mill Equipment. Providing turnkey solutions and engineering excellence from Vapi, Gujarat since 2004.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-brand-900 flex items-center justify-center hover:bg-brand-600 transition-all duration-300 text-gray-300 hover:text-white hover:-translate-y-1">
+              <a href="https://www.linkedin.com/company/salonipmpl" target="_blank" rel="noreferrer" aria-label="Saloni Paper Machines on LinkedIn" className="w-10 h-10 rounded-full bg-brand-900 flex items-center justify-center hover:bg-brand-600 transition-all duration-300 text-gray-300 hover:text-white hover:-translate-y-1">
                 <Linkedin size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-brand-900 flex items-center justify-center hover:bg-brand-600 transition-all duration-300 text-gray-300 hover:text-white hover:-translate-y-1">
+              <a href="https://www.facebook.com/salonipmpl" target="_blank" rel="noreferrer" aria-label="Saloni Paper Machines on Facebook" className="w-10 h-10 rounded-full bg-brand-900 flex items-center justify-center hover:bg-brand-600 transition-all duration-300 text-gray-300 hover:text-white hover:-translate-y-1">
                 <Facebook size={18} />
               </a>
             </div>
@@ -29,11 +52,13 @@ export const Footer: React.FC = () => {
           <div>
             <h4 className="text-lg font-heading font-bold mb-6 text-white border-b-2 border-brand-600 inline-block pb-1">Quick Links</h4>
             <ul className="space-y-4 text-sm text-gray-300">
-              <li><a href="#about" className="hover:text-brand-400 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>About Us</a></li>
-              <li><a href="#products" className="hover:text-brand-400 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>Machine Catalogue</a></li>
-              <li><a href="#services" className="hover:text-brand-400 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>Services</a></li>
-              <li><a href="#products" className="hover:text-brand-400 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>Products</a></li>
-              <li><a href="#contact" className="hover:text-brand-400 transition-colors flex items-center"><span className="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>Contact Us</a></li>
+              {footerLinks.map((link) => (
+                <li key={link.view}>
+                  <a href={`#${link.view}`} onClick={(event) => handleNavClick(event, link.view)} className="hover:text-brand-400 transition-colors flex items-center">
+                    <span className="w-1.5 h-1.5 bg-brand-500 rounded-full mr-2"></span>{link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -71,9 +96,10 @@ export const Footer: React.FC = () => {
             © {new Date().getFullYear()} Saloni Paper Machines Pvt. Ltd. All rights reserved.
           </p>
           <div className="flex space-x-8 mt-4 md:mt-0 text-sm text-gray-500">
-             <a href="#" className="hover:text-brand-400 transition-colors">Privacy Policy</a>
-             <a href="#" className="hover:text-brand-400 transition-colors">Terms of Service</a>
-             <a href="#" className="hover:text-brand-400 transition-colors">Sitemap</a>
+             {secondaryLinks.map((link) => (
+               <a key={link.view} href={`#${link.view}`} onClick={(event) => handleNavClick(event, link.view)} className="hover:text-brand-400 transition-colors">{link.label}</a>
+             ))}
+             <a href="/sitemap.xml" target="_blank" rel="noreferrer" className="hover:text-brand-400 transition-colors">Sitemap</a>
           </div>
         </div>
       </div>

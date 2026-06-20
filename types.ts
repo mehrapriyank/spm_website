@@ -36,13 +36,6 @@ export interface Machine {
 }
 
 
-export interface Project {
-  id: string;
-  title: string;
-  category: string;
-  image: string;
-}
-
 export interface ContactInfo {
   address: string;
   phone: string;

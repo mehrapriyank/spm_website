@@ -1,5 +1,5 @@
-import { NavItem, Service, Statistic, Project, ContactInfo, Product, GalleryItem, Machine } from './types';
-import { Settings, Factory, Hammer, Leaf, Zap, TrendingUp, Wrench, Users, Recycle, ShieldCheck, LifeBuoy, Cog } from 'lucide-react';
+import { NavItem, Service, Statistic, ContactInfo, Product, GalleryItem, Machine } from './types';
+import { Settings, Factory, Zap, TrendingUp, Wrench, Users, ShieldCheck, Cog } from 'lucide-react';
 
 export const APP_NAME = "Saloni Paper Machine Pvt. Ltd.";
 export const LOGO = "images/logo.png";
